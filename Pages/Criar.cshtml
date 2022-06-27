@@ -1,0 +1,48 @@
+@page
+@model CriarModel
+@{
+    ViewData["Title"] = "Criar Cadastro";
+}
+
+<div class="text-center">
+
+    <h1 class="display-4">Criar Cadastro</h1>
+
+</div>
+
+<form>
+  <div class="form-group">
+    <label for="empresa">Empresa:</label>
+    <input type="text" class="form-control" placeholder="Nome da Empresa">
+  </div>
+  <div class="form-group">
+    <label for="nome">Nome:</label>
+    <input type="text" class="form-control" placeholder="Nome do Proprietário">
+  </div>
+  <div class="form-group">
+    <label for="CPF/CNPJ">CPF ou CNPJ:</label>
+    <input type="text" class="form-control" placeholder="CPF ou CNPJ da empresa">
+  </div>
+    <div class="container">
+   <div class="container">
+    <div class="row">
+        <div class='col-lg-9'>
+            <div class="form-group">
+            <label for="dtpickerdemo" class="col-sm-2 control-label">Data:</label>
+                <div class='col-sm-4 input-group date' id='dtpickerdemo'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#dtpickerdemo').datetimepicker();
+            });
+        </script>
+    </div>
+    </div> 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
