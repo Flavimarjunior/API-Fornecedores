@@ -23,26 +23,31 @@
     <label for="CPF/CNPJ">CPF ou CNPJ:</label>
     <input type="text" class="form-control" placeholder="CPF ou CNPJ da empresa">
   </div>
-    <div class="container">
-   <div class="container">
-    <div class="row">
-        <div class='col-lg-9'>
-            <div class="form-group">
-            <label for="dtpickerdemo" class="col-sm-2 control-label">Data:</label>
-                <div class='col-sm-4 input-group date' id='dtpickerdemo'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#dtpickerdemo').datetimepicker();
-            });
-        </script>
+  <br/>
+
+  <div class="well">
+    <div id="datetimepicker1" class="input-append date">
+    <input data-format="dd/MM/yyyy hh:mm:ss" type="text">Data:</input>
+    <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
     </div>
-    </div> 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+    <script type="text/javascript">
+    $(function() {
+    $('#datetimepicker1').datetimepicker({
+      language: 'pt-BR'
+      });
+      });
+    </script>
+
+  <div class="form-group">
+    <label for="CPF/CNPJ">Telefone:</label>
+    <input type="text" class="form-control" placeholder="(00)00000-0000">
+  </div>
+
+  <br/>
+  <span><button type="submit" class="btn btn-primary">Adicionar</button></span>
+  <span><a class="btn btn-secundary" href="Fornecedores">Voltar</a></span>
 </form>
