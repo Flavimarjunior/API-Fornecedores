@@ -23,25 +23,12 @@
     <label for="CPF/CNPJ">CPF ou CNPJ:</label>
     <input type="text" class="form-control" placeholder="CPF ou CNPJ da empresa">
   </div>
-  <br/>
-
-  <div class="well">
-    <div id="datetimepicker1" class="input-append date">
-    <input data-format="dd/MM/yyyy hh:mm:ss" type="text">Data:</input>
-    <span class="add-on">
-      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
-      </i>
-    </span>
-    </div>
+   <div>
+  <form>
+    <label for="party">Data:</label>
+    <input id="party" type="datetime-local" class="form-control" name="partydate">
+  </form>
   </div>
-    <script type="text/javascript">
-    $(function() {
-    $('#datetimepicker1').datetimepicker({
-      language: 'pt-BR'
-      });
-      });
-    </script>
-
   <div class="form-group">
     <label for="CPF/CNPJ">Telefone:</label>
     <input type="text" class="form-control" placeholder="(00)00000-0000">
